@@ -1,0 +1,287 @@
+<ion-view>
+
+  <ion-content>
+    <!--<div>-->
+    <ion-scroll direction="y"   style="width:100%" scroll-height zooming="true" >
+    <img src="img/logo_1.jpg" class="default_width"/>
+    <div class="index_til" id="rs_tc"><span>特色套餐</span></div>
+    <div class="tc_body">
+
+      <a  ng-repeat="item in taocan track by $index" href="#/tab/taocan_content/{{item.goods_id}}">
+        <div class="tc_list"  data-am-scrollspy="{animation:'slide-left', delay: 500}">
+          <div class="tc_bk">火热</div>
+          <img src="http://120.76.79.171/{{item.goods_thumb }}"  />
+          <!--<div class=""></div>-->
+          <h5>{{item.goods_name}}</h5>
+          <div class="tc_ls_prc">¥{{item.shop_price}}<span>销量:123</span></div>
+          <div class="clearboth"></div>
+        </div></a>
+
+
+      <a href="#/tab/taocan_content">
+        <div class="tc_list"  data-am-scrollspy="{animation:'slide-left', delay: 500}">
+          <div class="tc_bk">火热</div>
+          <img src="img/tc_1.png" />
+          <!--<div class=""></div>-->
+          <h5>仅售188元，价值710元布吉店绝对伏特加套餐！提供免费WiFi、停车位!</h5>
+          <div class="tc_ls_prc">¥:188<span>销量:123</span></div>
+          <div class="clearboth"></div>
+        </div></a>
+      <a href="#/tab/taocan_content"><div class="tc_list"  data-am-scrollspy="{animation:'slide-left', delay: 500}">
+        <div class="tc_bk">火热</div>
+        <img src="img/tc_2.png" />
+        <!--<div class=""></div>-->
+        <h5>仅售388元，价值678元2-4人餐！节假日通用，提供免费WiFi！</h5>
+        <div class="tc_ls_prc">¥:388<span>销量:165</span></div>
+        <div class="clearboth"></div>
+      </div></a>
+      <a href="#/tab/taocan_content"><div class="tc_list"  data-am-scrollspy="{animation:'slide-left', delay: 500}">
+        <div class="tc_bk">火热</div>
+        <img src="img/tc_3.png" />
+        <!--<div class=""></div>-->
+        <h5>仅售108元，价值218元茶水套餐！节假日通用，请至少提前2小时预约，提供免费WiFi！</h5>
+        <div class="tc_ls_prc">¥:108<span>销量:86</span></div>
+        <div class="clearboth"></div>
+      </div></a>
+      <a href="#/tab/taocan_content"><div class="tc_list"  data-am-scrollspy="{animation:'slide-left', delay: 500}">
+        <div class="tc_bk">火热</div>
+        <img src="img/tc_4.png" />
+        <!--<div class=""></div>-->
+        <h5>仅售128元，最高价值238元啤酒套餐！免费提供无线WiFi，停车位</h5>
+        <div class="tc_ls_prc">¥:128<span>销量:186</span></div>
+        <div class="clearboth"></div>
+      </div></a>
+      <div class="clearboth"></div>
+    </div>
+
+    <div class="clearboth"></div>
+
+    <div class="taocan_list">
+      <!--<div data-am-scrollspy="{animation:'scale-up', delay: 300}"><img src="img/food_7.png" class="default_width" /></div>-->
+      <div class="index_til" id="wz_cd"><span>完整菜单</span></div>
+      <img src="img/wt_1.jpg" class="default_width" />
+      <img src="img/wt_2.jpg" class="default_width" />
+      <img src="img/wt_3.jpg" class="default_width" />
+      <img src="img/wt_4.jpg" class="default_width" />
+      <img src="img/wt_5.jpg" class="default_width" />
+      <img src="img/wt_6.jpg" class="default_width" />
+      <img src="img/wt_7.jpg" class="default_width" />
+      <img src="img/wt_8.jpg" class="default_width" />
+      <img src="img/wt_9.jpg" class="default_width" />
+      <img src="img/wt_10.jpg" class="default_width" />
+
+    </div>
+
+
+    <div style="width: 100%;height: 2rem"></div>
+    <div class="pj_fl"><h5><i class="am-icon-beer" id="rs_pj"></i>热销啤酒 <span>Hot beer</span></h5></div>
+
+    <div class="tao_can" data-am-scrollspy="{animation:'slide-bottom', delay: 500}">
+      <div style="background-image: url(taocan/beer_1.jpg)" class="tao_can_1">
+        <img src="taocan/beer_1.jpg"/>
+      </div>
+      <div class="tao_can_2">福佳白</div>
+      <div class="clearboth"></div>
+    </div>
+
+    <div class="tao_can" data-am-scrollspy="{animation:'slide-bottom', delay: 500}">
+      <div class="tao_can_2">纯生</div>
+      <div style="background-image: url(img/food_2.png)" class="tao_can_1">
+        <!--<img src="img/food_2.png"/>-->
+      </div>
+      <div class="clearboth"></div>
+    </div>
+    <div class="tao_can" data-am-scrollspy="{animation:'slide-bottom', delay: 500}">
+      <div style="background-image: url(img/food_4.png)" class="tao_can_1"></div>
+      <div class="tao_can_2"><div class="tao_can_2_content"><h3>鱿鱼丝<span>Shredded squid</span></h3>在忙碌生活中，你是否偶尔会想歇歇，找一个小小的角落，静下来，慢慢地沉淀、思考、放松。</div></div>
+      <div class="clearboth"></div>
+    </div>
+    <div class="tao_can" data-am-scrollspy="{animation:'slide-bottom', delay: 500}">
+      <div class="tao_can_2">健力士醇黑啤酒</div>
+      <div style="background-image: url(taocan/beer_2.png)" class="tao_can_1">
+        <img src="taocan/beer_2.png"/>
+      </div>
+      <div class="clearboth"></div>
+    </div>
+    <div class="tao_can" data-am-scrollspy="{animation:'slide-bottom', delay: 500}">
+      <div style="background-image: url(taocan/beer_3.jpg)" class="tao_can_1"></div>
+      <div class="tao_can_2">百加得金朗姆酒+2罐可乐</div>
+
+      <div class="clearboth"></div>
+    </div>
+    <div class="tao_can" data-am-scrollspy="{animation:'slide-bottom', delay: 500}">
+      <div class="tao_can_2">法国1664白 啤酒</div>
+      <div style="background-image: url(taocan/beer_4.png)" class="tao_can_1"></div>
+      <div class="clearboth"></div>
+    </div>
+    <div class="tao_can" data-am-scrollspy="{animation:'slide-bottom', delay: 500}">
+      <div style="background-image: url(taocan/beer_5.jpg)" class="tao_can_1"></div>
+      <div class="tao_can_2">百威纯生啤酒罐装</div>
+      <div class="clearboth"></div>
+    </div>
+    <div class="tao_can" data-am-scrollspy="{animation:'slide-bottom', delay: 500}">
+      <div class="tao_can_2">小瓶冰纯嘉士伯啤酒</div>
+      <div style="background-image: url(taocan/beer_6.jpg)" class="tao_can_1"></div>
+      <div class="clearboth"></div>
+    </div>
+    <div class="tao_can" data-am-scrollspy="{animation:'slide-bottom', delay: 500}">
+      <div style="background-image: url(taocan/beer_7.png)" class="tao_can_1"></div>
+      <div class="tao_can_2">罐装蓝妹啤酒</div>
+      <div class="clearboth"></div>
+    </div>
+    <div class="tao_can" data-am-scrollspy="{animation:'slide-bottom', delay: 500}">
+      <div class="tao_can_2">法国1664白 啤酒</div>
+      <div style="background-image: url(taocan/beer_4.png)" class="tao_can_1"></div>
+      <div class="clearboth"></div>
+    </div>
+    <div class="tao_can" data-am-scrollspy="{animation:'slide-bottom', delay: 500}">
+      <div style="background-image: url(taocan/beer_5.jpg)" class="tao_can_1"></div>
+      <div class="tao_can_2">百威纯生啤酒罐装</div>
+      <div class="clearboth"></div>
+    </div>
+    <img src="img/food_9.png" class="default_width"  data-am-scrollspy="{animation:'slide-bottom', delay: 500}" />
+    <div class="pj_fl"><h5><i class="am-icon-beer" id="om_yj"></i>欧美洋酒 <span>Hot beer</span></h5></div>
+
+    <div class="tao_can" data-am-scrollspy="{animation:'slide-bottom', delay: 500}">
+      <div style="background-image: url(taocan/om_yj_1.jpg)" class="tao_can_1">
+        <!--<img src="taocan/beer_1.jpg"/>-->
+      </div>
+      <div class="tao_can_2">格兰菲迪15年麦芽威士忌</div>
+      <div class="clearboth"></div>
+    </div>
+
+    <div class="tao_can" data-am-scrollspy="{animation:'slide-bottom', delay: 500}">
+      <div class="tao_can_2">麦卡伦12年苏格兰威士忌</div>
+      <div style="background-image: url(taocan/om_yj_2.jpg)" class="tao_can_1">
+        <!--<img src="img/food_2.png"/>-->
+      </div>
+      <div class="clearboth"></div>
+    </div>
+    <div class="tao_can" data-am-scrollspy="{animation:'slide-bottom', delay: 500}">
+      <div style="background-image: url(taocan/om_yj_3.jpg)" class="tao_can_1"></div>
+      <!--<div class="tao_can_2">纯生</div>-->
+      <div class="tao_can_2"><div class="tao_can_2_content"><h3>苏威士忌<span>Shredded squid</span></h3>在忙碌生活中，你是否偶尔会想歇歇，找一个小小的角落，静下来，慢慢地沉淀、思考、放松。</div></div>
+      <div class="clearboth"></div>
+    </div>
+    <div class="tao_can" data-am-scrollspy="{animation:'slide-bottom', delay: 500}">
+      <div class="tao_can_2">健力士醇黑啤酒</div>
+      <div style="background-image: url(taocan/beer_2.png)" class="tao_can_1">
+        <img src="taocan/beer_2.png"/>
+      </div>
+      <div class="clearboth"></div>
+    </div>
+    <img src="img/food_9.png" class="default_width"  data-am-scrollspy="{animation:'slide-bottom', delay: 500}" />
+    <div class="pj_fl"><h5><i class="am-icon-beer" id="jwj"></i>鸡尾酒 <span>Hot beer</span></h5></div>
+
+    <div class="tao_can" data-am-scrollspy="{animation:'slide-bottom', delay: 500}">
+      <div style="background-image: url(taocan/jwj_1.jpg)" class="tao_can_1">
+        <!--<img src="taocan/beer_1.jpg"/>-->
+      </div>
+      <div class="tao_can_2">鸡尾酒</div>
+      <div class="clearboth"></div>
+    </div>
+
+    <div class="tao_can" data-am-scrollspy="{animation:'slide-bottom', delay: 500}">
+      <div class="tao_can_2">百利甜力娇酒</div>
+      <div style="background-image: url(taocan/jwj_2.jpg)" class="tao_can_1">
+        <!--<img src="img/food_2.png"/>-->
+      </div>
+      <div class="clearboth"></div>
+    </div>
+    <div class="tao_can" data-am-scrollspy="{animation:'slide-bottom', delay: 500}">
+      <div style="background-image: url(taocan/jwj_3.jpg)" class="tao_can_1"></div>
+      <!--<div class="tao_can_2">纯生</div>-->
+      <div class="tao_can_2"><div class="tao_can_2_content"><h3>鸡尾酒<span>Shredded squid</span></h3>在忙碌生活中，你是否偶尔会想歇歇，找一个小小的角落，静下来，慢慢地沉淀、思考、放松。</div></div>
+      <div class="clearboth"></div>
+    </div>
+    <div class="tao_can" data-am-scrollspy="{animation:'slide-bottom', delay: 500}">
+      <div class="tao_can_2">马天尼红.白.干威末酒</div>
+      <div style="background-image: url(taocan/jwj_4.jpg)" class="tao_can_1">
+        <!--<img src="taocan/beer_2.png"/>-->
+      </div>
+      <div class="clearboth"></div>
+    </div>
+    <img src="img/food_9.png" class="default_width"  data-am-scrollspy="{animation:'slide-bottom', delay: 500}" />
+    <div class="pj_fl"><h5><i class="am-icon-beer" id="hj"></i>红酒 <span>Hot beer</span></h5></div>
+    <!--<div class="tao_can" data-am-scrollspy="{animation:'slide-bottom', delay: 500}">-->
+    <!--<div style="background-image: url(taocan/beer_1.jpg)" class="tao_can_1"></div>-->
+    <!--<div class="tao_can_2">福佳白</div>-->
+    <!--<div class="clearboth"></div>-->
+    <!--</div>-->
+    <div class="tao_can" data-am-scrollspy="{animation:'slide-bottom', delay: 500}">
+      <div style="background-image: url(taocan/hj_1.jpg)" class="tao_can_1">
+        <!--<img src="taocan/beer_1.jpg"/>-->
+      </div>
+      <div class="tao_can_2">小波赛庄园干红</div>
+      <div class="clearboth"></div>
+    </div>
+
+    <div class="tao_can" data-am-scrollspy="{animation:'slide-bottom', delay: 500}">
+      <div class="tao_can_2">皇冠干红葡萄酒</div>
+      <div style="background-image: url(taocan/hj_2.jpg)" class="tao_can_1">
+        <!--<img src="img/food_2.png"/>-->
+      </div>
+      <div class="clearboth"></div>
+    </div>
+    <div class="tao_can" data-am-scrollspy="{animation:'slide-bottom', delay: 500}">
+      <div style="background-image: url(taocan/hj_3.jpg)" class="tao_can_1"></div>
+      <!--<div class="tao_can_2">纯生</div>-->
+      <div class="tao_can_2"><div class="tao_can_2_content"><h3>红酒<span>Shredded squid</span></h3>在忙碌生活中，你是否偶尔会想歇歇，找一个小小的角落，静下来，慢慢地沉淀、思考、放松。</div></div>
+      <div class="clearboth"></div>
+    </div>
+    <div class="tao_can" data-am-scrollspy="{animation:'slide-bottom', delay: 500}">
+      <div class="tao_can_2">乐闻长相思干白葡萄酒</div>
+      <div style="background-image: url(taocan/hj_4.jpg)" class="tao_can_1">
+        <!--<img src="taocan/beer_2.png"/>-->
+      </div>
+      <div class="clearboth"></div>
+    </div>
+
+    <div class="tc_shuoming">
+      1.套餐使用日期:2016.01.01至2016.12.31<br>
+      2.每种套餐每人最多只能购买2个.<br>
+      3.祝君玩得愉快!!!<br>
+    </div>
+
+
+    <!--<div class="fix_cho">-->
+      <!--<ul>-->
+        <!--<a href="#rs_tc"><li>热销套餐</li></a>-->
+        <!--<a href="#rs_pj"><li>热销啤酒</li></a>-->
+        <!--<a href="#om_yj"><li>欧美洋酒</li></a>-->
+        <!--<a href="#jwj"><li>鸡尾酒</li></a>-->
+        <!--<a href="#hj"><li>红酒</li></a>-->
+        <!--<a href="#wz_cd"><li>完整菜单</li></a>-->
+      <!--</ul>-->
+      <!--<div>分类<i class="am-icon-star-o"></i></div>-->
+    <!--</div>-->
+    <div class="index_til" data-am-scrollspy="{animation:'slide-bottom', delay: 500}"><span>长按图片关注公众号即送啤酒一杯！</span></div>
+    <div style="text-align: center">
+      <img src="img/erweima_3.jpg" style="margin: 1rem auto;width: 50%" />
+    </div>
+
+    <!--<script src="js/amazeui.min.js"></script>-->
+    <!--</div>-->
+      </ion-scroll>
+  </ion-content>
+
+  <!--<div class="fix_cho">-->
+    <!--<ul>-->
+      <!--<li  ng-click="jumper('rs_tc')">热销套餐</li>-->
+      <!--<li ng-click="jumper('rs_pj')">热销啤酒</li>-->
+      <!--<li ng-click="jumper('om_yj')">欧美洋酒</li>-->
+      <!--<li  ng-click="jumper('jwj')">鸡尾酒</li>-->
+      <!--<li  ng-click="jumper('hj')">红酒</li>-->
+      <!--<li ng-click="jumper('wz_cd')">完整菜单</li>-->
+      <!--<li ng-click="scrollTop()">回到顶部</li>-->
+    <!--</ul>-->
+    <!--<div>分类<i class="am-icon-star-o"></i></div>-->
+  <!--</div>-->
+
+</ion-view>
+<script src="js/index.js"></script>
+<!--<script src="js/amazeui.min.js"></script>-->
+
+<script>
+  var furl='http://120.76.79.171/';
+</script>
