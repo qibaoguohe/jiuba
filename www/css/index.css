@@ -389,7 +389,8 @@
     padding: 0.5rem 1%;
     /*background: #1caf9a;*/
     background: rgba(75,9,73,0.8);
-    margin: 1rem 0;
+    /*margin: 1rem 0;*/
+  margin-bottom: 2rem;
 }
 .dd_ls_l{
     display: block;

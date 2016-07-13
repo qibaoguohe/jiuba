@@ -137,6 +137,24 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+    .state('tab.dingdan_list',{   //订单list
+          url:'/dingdan_list',
+      views:{
+        'dingdan_list':{
+          templateUrl:'templates/dingdan_list.html',
+          controller:'dingdan_list'
+        }
+      }
+    })
+    .state('tab.dingdan_list_content',{   //订单list
+      url:'/dingdan_list/:id',
+      views:{
+        'dingdan_list':{
+          templateUrl:'templates/dingdan_list_content.html',
+          controller:'dingdan_list_content'
+        }
+      }
+    })
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/dash');

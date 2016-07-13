@@ -64,6 +64,17 @@ angular.module('starter.controllers', [])
         //$scope.$ionicGoBack();
       }
   })
+  .controller('dingdan_list',function($scope){
+
+  })
+  .controller('dingdan_list_content',function($scope,$ionicHistory){
+    $scope.gback=function(event){
+      //event.stopPropagation();
+      history.back(-1);
+      //$ionicHistory.goBack();
+      //$scope.$ionicGoBack();
+    }
+  })
 //function jumper(key, $location, $anchorScroll){
 //  $location.hash(key);
 //  $anchorScroll(500)
